@@ -1,0 +1,376 @@
+/*----------------------------------------*/
+/* How Far Africa default CSS
+/*----------------------------------------*/
+
+@font-face {
+	font-family: 'Poppins';
+	src: url("../fonts/._Poppins-Black.otf");
+	src: url("../fonts/._Poppins-BlackItalic.otf");
+	src: url("../fonts/._Poppins-Bold.otf");
+	src: url("../fonts/._Poppins-BoldItalic.otf");
+	src: url("../fonts/._Poppins-ExtraBold.otf");
+	src: url("../fonts/._Poppins-ExtraBoldItalic.otf");
+	src: url("../fonts/._Poppins-ExtraLight.otf");
+	src: url("../fonts/._Poppins-ExtraLightItalic.otf");
+	src: url("../fonts/._Poppins-Italics.otf");
+	src: url("../fonts/._Poppins-Light.otf");
+	src: url("../fonts/._Poppins-Medium.otf");
+	src: url("../fonts/._Poppins-MediumItalic.otf");
+	src: url("../fonts/._Poppins-Regular.otf");
+	src: url("../fonts/._Poppins-SemiBold.otf");
+	src: url("../fonts/._Poppins-Thin.otf");
+	src: url("../fonts/._Poppins-ThinItalic.otf");
+}
+
+html,
+body {
+	width: fit-content;
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+	background-color: #000000;
+	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #ffffff;
+	margin: 0;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+p {
+	font-size: 15.7px;
+    line-height: 1.6;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+	width: 80%;
+	display: grid;
+	grid-template-columns: 3fr 9fr;
+	position: relative;
+}
+
+/* Left Side - Menu */
+
+.col-lg-3 {
+    padding: 0;
+}
+
+.left-side {
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/side-rectangle.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+}
+
+.left-side__img {
+    text-align: center;
+	margin: 40px 40px 40px;
+	width: 60%;
+}
+
+.left-side__menu {
+	display: block;
+	padding: 0px;
+	font-weight: 500;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.left-side__nav-item {
+    list-style: none;
+	padding: 12px;
+	padding-left: 30px;
+}
+
+.left-side__nav-item--active {
+    margin: 0;
+	padding: 12px;
+	padding-left: 30px;
+	background-color: #f7931e;
+	width: 80%;
+	border-radius: 0 50px 50px 0;
+}
+
+.left-side__nav-item--space {
+    height: 100px;
+    list-style: none;
+}
+
+
+/* Right Side - Page Content */
+
+.right-side {
+    border: 2px;
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+
+.right-side__header {
+	position: relative;
+	width: 100%;
+	top: 0px;
+	z-index: 99;
+	margin-top: 0px;
+}
+
+.right-side__form {
+	display: inline;
+	margin-left: 35px;
+	position: absolute;
+	margin-top: 30px;
+}
+
+.right-side__form--input {
+	border-radius: 5px;
+	border: 0;
+	outline: none;
+	width: 300px;
+	height: 35px;
+	color: #fff;
+	background-color: rgba(128, 147, 126, 0.5);
+	padding-left: 60px;
+}
+
+.right-side__form i {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	font-size: 1.3em;
+	color: #ffffff;
+}
+
+.right-side__form--input::placeholder {
+	color: #ffffff;
+	font-size: 1.1em;
+	font-weight: 100;
+	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.right-side__notification {
+	color: #ffffff;
+	margin-left: 30px;
+	font-size: 1em;
+	position: absolute;
+	left: 400px;
+	top: 40px;
+}
+
+.notification__span {
+	background-color: #f7931e;
+	border-radius: 100%;
+	min-width: 8px;
+	min-height: 8px;
+	font-size: 6px;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+
+.right-side__btn {
+	right: 10px;
+	margin-right: 60px;
+	margin-top: 10px;
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	padding: 1px 5px;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 16px;
+	border-radius: 5px;
+	font-family: "Futura", sans-serif;
+	min-width: 50px;
+	text-align: center;
+	background-color: #d96b2b;
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.page-info-section {
+	height: 300px;
+	background-image: url("../img/appstore.png");
+	background-size: cover;
+	background-color: rgba(000, 000, 000, .8);
+	background-position: right top;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	padding-top: 100px;
+	padding-left: 45px;
+	padding-right: 90px;
+	height: 190px;
+}
+
+.page-info-section .page-header {
+	color: #ffffff;
+	font-size: 3em;
+	font-weight: 900;
+	margin-top: 50px;
+}
+
+.page-description {
+	padding-top: 0px;
+	font-size: 1em;
+	color: #ffffff;
+	line-height: 2;
+}
+
+
+.card {
+	margin: 30px auto;
+	display: grid;
+	width: 90%;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-column-gap: 10px;
+}
+
+.card--links {
+	max-width: 230px;
+	height: 140px;
+	margin: 5px;
+	border: 0;
+	color: #ffffff;
+	font-size: 1.5em;
+	font-weight: 500;
+	padding-top: 75px;
+	display: inline;
+	position: relative;
+}
+
+.card--links i {
+	
+	font-size: 120px;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	z-index: 1;
+}
+
+.card--links .card--text{
+	position: absolute;
+	font-size: 1em;
+	bottom: 10px;
+	padding: 10px;
+	z-index: 10;
+}
+
+.card--links-phys {
+	background-color: #fbae17;
+	border-radius: 5px;
+	height: 70px;
+}
+
+.card--links-phys>i {
+	color: #fbc150;
+}
+
+.card--links-chem {
+	background-color: #57a641;
+	border-radius: 5px;
+	height: 70px;
+}
+
+.card--links-chem>i {
+	color: #86bf77;
+}
+
+.card--links-math {
+	background-color: #f7931e;
+	border-radius: 5px;
+	height: 70px;
+}
+
+.card--links-math>i {
+	color: #f7a647;
+}
+
+.card--links-biol {
+	background-color: #d96b2b;
+	border-radius: 5px;
+	height: 70px;
+}
+
+.card--links-biol>i {
+	color: #de834f;
+}
+
+.card--links-agri {
+	background-color: #c1272d;
+	border-radius: 5px;
+	height: 70px;
+}
+
+.card--links-agri>i {
+	color: #cf5b5f;
+}
+
+.card--links-yoru {
+	background-color: #b45722;
+	border-radius: 5px;
+	height: 70px;
+}
+.card--links-yoru>i {
+	color: #c2784e;
+}
